@@ -32,7 +32,7 @@
             app:tabIndicatorColor="@color/tab_indicator_color"
             app:tabTextColor="@color/tab_bar_item_unselected"
             app:tabSelectedTextColor="@color/tab_selected_title_color"
-            android:layout_height="wrap_content"/>
+            android:layout_height="?android:actionBarSize"/>
 
 
         <androidx.viewpager.widget.ViewPager

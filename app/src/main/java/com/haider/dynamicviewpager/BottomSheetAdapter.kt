@@ -7,14 +7,14 @@ import androidx.fragment.app.FragmentPagerAdapter
 class BottomSheetAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     private val fragmentList = mutableListOf<Fragment>()
-    private val tabTitle = mutableListOf<String>()
+    private val tabTitles = mutableListOf<String>()
 
     override fun getItem(position: Int): Fragment {
         return fragmentList[position]
     }
     fun addFragment(fragment: Fragment, title: String) {
         fragmentList.add(fragment)
-        tabTitle.add(title)
+        tabTitles.add(title)
     }
 
     override fun getCount(): Int {
@@ -22,7 +22,7 @@ class BottomSheetAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     }
 
     override fun getPageTitle(position: Int): CharSequence? {
-        return tabTitle[position]
+        return tabTitles[position]
 
     }
 }

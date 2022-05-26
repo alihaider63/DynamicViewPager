@@ -32,8 +32,9 @@
         <entry key="app/src/main/res/layout/fragment_dynamic.xml" value="0.2203125" />
         <entry key="app/src/main/res/layout/fragment_dynamic_user_reacted.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/item_view.xml" value="0.2579013906447535" />
+        <entry key="app/src/main/res/layout/item_view_who_reacted_user.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/reacted_user_item_view.xml" value="0.234375" />
-        <entry key="app/src/main/res/layout/who_reacted_bottom_sheet.xml" value="0.3175218361705991" />
+        <entry key="app/src/main/res/layout/who_reacted_bottom_sheet.xml" value="0.1" />
       </map>
     </option>
   </component>

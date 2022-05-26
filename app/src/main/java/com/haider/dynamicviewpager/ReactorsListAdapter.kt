@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class DynamicUserReactedAdapter(private val users: ArrayList<User>, private val context: Context): RecyclerView.Adapter<DynamicViewHolder>() {
+class ReactorsListAdapter(private val users: ArrayList<User>, private val context: Context): RecyclerView.Adapter<DynamicViewHolder>() {
 
     override fun onBindViewHolder(holder: DynamicViewHolder, position: Int) {
         holder.bind(users[position], context)
@@ -17,7 +17,7 @@ class DynamicUserReactedAdapter(private val users: ArrayList<User>, private val 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DynamicViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        val view = inflater.inflate(R.layout.reacted_user_item_view, parent,false)
+        val view = inflater.inflate(R.layout.item_view_who_reacted_user, parent,false)
         return DynamicViewHolder(view)
     }
 

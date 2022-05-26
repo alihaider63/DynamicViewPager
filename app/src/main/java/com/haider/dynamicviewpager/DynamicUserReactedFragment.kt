@@ -11,15 +11,13 @@ import com.haider.dynamicviewpager.databinding.FragmentDynamicUserReactedBinding
 class DynamicUserReactedFragment : Fragment() {
 
     lateinit var binding: FragmentDynamicUserReactedBinding
-    lateinit var adapter: DynamicUserReactedAdapter
+    lateinit var adapter: ReactorsListAdapter
 
     companion object {
-        const val DYNAMICUSERLIST = "dynamicuserlist"
+        const val DYNAMIC_USER_LIST = "dynamic_user_list"
         fun getNewInstance(userList: ArrayList<User>) = DynamicUserReactedFragment().apply {
             val bundle = Bundle()
-            bundle.let {
-                it.putParcelableArrayList(DYNAMICUSERLIST, userList)
-            }
+            bundle.putParcelableArrayList(DYNAMIC_USER_LIST, userList)
             arguments = bundle
         }
     }
@@ -35,11 +33,11 @@ class DynamicUserReactedFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val userList = arguments?.getParcelableArrayList<User>(DYNAMICUSERLIST)
+        val userList = arguments?.getParcelableArrayList<User>(DYNAMIC_USER_LIST)
 
         val context = context
         if (userList != null && context != null) {
-            adapter = DynamicUserReactedAdapter(userList, context)
+            adapter = ReactorsListAdapter(userList, context)
         }
 
         binding.recyclerViewReactedUser.adapter = adapter

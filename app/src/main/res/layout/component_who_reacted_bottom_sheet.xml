@@ -35,12 +35,12 @@
             android:layout_height="?android:actionBarSize"/>
 
 
-        <androidx.viewpager.widget.ViewPager
+        <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/who_reacted_viewpager"
             android:layout_width="match_parent"
             android:theme="@style/AppTheme.Viewpager"
             android:background="@color/background_color"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 

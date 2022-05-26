@@ -3,26 +3,28 @@ package com.haider.dynamicviewpager
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class BottomSheetAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
+class BottomSheetAdapter(fr: Fragment) : FragmentStateAdapter(fr) {
 
     private val fragmentList = mutableListOf<Fragment>()
     private val tabTitles = mutableListOf<String>()
 
-    override fun getItem(position: Int): Fragment {
-        return fragmentList[position]
-    }
     fun addFragment(fragment: Fragment, title: String) {
         fragmentList.add(fragment)
         tabTitles.add(title)
     }
 
-    override fun getCount(): Int {
+//    override fun getPageTitle(position: Int): CharSequence {
+//        return tabTitles[position]
+//
+//    }
+
+    override fun getItemCount(): Int {
         return fragmentList.size
     }
 
-    override fun getPageTitle(position: Int): CharSequence? {
-        return tabTitles[position]
-
+    override fun createFragment(position: Int): Fragment {
+        return fragmentList[position]
     }
 }

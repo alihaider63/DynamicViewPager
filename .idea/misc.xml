@@ -29,8 +29,10 @@
         <entry key="app/src/main/res/font/nunito_semibold_italic.xml" value="0.22962962962962963" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/bottom_sheet_layout.xml" value="0.234375" />
+        <entry key="app/src/main/res/layout/component_who_reacted_bottom_sheet.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/fragment_dynamic.xml" value="0.2203125" />
         <entry key="app/src/main/res/layout/fragment_dynamic_user_reacted.xml" value="0.234375" />
+        <entry key="app/src/main/res/layout/fragment_who_reacted_users.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/item_view.xml" value="0.2579013906447535" />
         <entry key="app/src/main/res/layout/item_view_who_reacted_user.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/reacted_user_item_view.xml" value="0.234375" />

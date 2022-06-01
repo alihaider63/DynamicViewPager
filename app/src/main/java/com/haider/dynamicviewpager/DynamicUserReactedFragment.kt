@@ -1,16 +1,16 @@
 package com.haider.dynamicviewpager
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.haider.dynamicviewpager.databinding.FragmentDynamicUserReactedBinding
+import com.haider.dynamicviewpager.databinding.FragmentWhoReactedUsersBinding
 
 class DynamicUserReactedFragment : Fragment() {
 
-    lateinit var binding: FragmentDynamicUserReactedBinding
+    lateinit var binding: FragmentWhoReactedUsersBinding
     lateinit var adapter: ReactorsListAdapter
 
     companion object {
@@ -27,7 +27,7 @@ class DynamicUserReactedFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentDynamicUserReactedBinding.inflate(inflater)
+        binding = FragmentWhoReactedUsersBinding.inflate(inflater)
         return binding.root
     }
 

@@ -9,11 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.tabs.TabLayoutMediator
-import com.haider.dynamicviewpager.databinding.WhoReactedBottomSheetBinding
+import com.haider.dynamicviewpager.databinding.ComponentWhoReactedBottomSheetBinding
 
 class WhoReactedBottomSheet: BottomSheetDialogFragment() {
 
-    private lateinit var binding: WhoReactedBottomSheetBinding
+    private lateinit var binding: ComponentWhoReactedBottomSheetBinding
 
     companion object {
         const val WHO_REACTED_LIST = "who_reacted_list"
@@ -29,7 +29,7 @@ class WhoReactedBottomSheet: BottomSheetDialogFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = WhoReactedBottomSheetBinding.inflate(inflater)
+        binding = ComponentWhoReactedBottomSheetBinding.inflate(inflater)
         return binding.root
     }
 
